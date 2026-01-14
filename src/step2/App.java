@@ -3,6 +3,7 @@ package step2;
 import java.util.Scanner; //Scanner 불러오기
 
 public class App {
+
     public static void main(String[] args) {
         Calculator calc = new Calculator(); // Calculator 생성
         Scanner sc = new Scanner(System.in); // Scanner 객체 생성

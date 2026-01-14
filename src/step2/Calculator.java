@@ -2,7 +2,7 @@ package step2;
 
 public class Calculator {
 
-    public int calculate(int num1, int num2, char operator) {
+        public int calculate(int num1, int num2, char operator) {
         int result = 0;
 
         // 연산 진행
