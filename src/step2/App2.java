@@ -13,7 +13,6 @@ public class App2 {
         while (true) {
             System.out.print("첫 번째 숫자를 입력하세요: "); // println 대신 print 를 사용해 숫자 입력시 바로 옆에 입력하도록 설정
             String input1 = sc.next();
-            if (input1.equals("exit")) break; // exit 입력시 종료
             int num1 = Integer.parseInt(input1); // 문자를 숫자로 변환
             // 양의 정수 입력을 위한 조건
             if (num1 < 0) {
@@ -43,6 +42,13 @@ public class App2 {
             if(command.equals("remove")) {
                 calc.removeResult(); // 삭제하기
             }
+            System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
+            String exitCheck = sc.next();
+            if (exitCheck.equals("exit")) {
+                break;
+            }
+
+
         }
 
         calc.setResults(new ArrayList<>());
