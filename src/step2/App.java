@@ -32,8 +32,11 @@ public class App {
             char operator = sc.next().charAt(0);
 
             int result = calc.calculate(num1, num2, operator);
-
             System.out.println("결과: " + result);
+
+            System.out.println("연산 기록: " + calc.getResults()); // 간접접근으로 기록 가져오기
+
+
 
         }
         System.out.println("프로그램을 종료합니다.");
@@ -41,7 +44,5 @@ public class App {
 
 
     }
-
-
 
 }
