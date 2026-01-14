@@ -36,6 +36,13 @@ public class App2 {
             System.out.println("결과: " + result);
 
             System.out.println("연산 기록: " + calc.getResults()); // 간접접근으로 기록 가져오기
+
+            System.out.print("가장 오래된 기록을 삭제하겠습니까? (remove 입력 시 삭제)");
+            String command = sc.next();
+
+            if(command.equals("remove")) {
+                calc.removeResult(); // 삭제하기
+            }
         }
 
         calc.setResults(new ArrayList<>());

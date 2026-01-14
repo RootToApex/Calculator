@@ -48,4 +48,14 @@ public class Calculator2 {
     public void setResults(List<Integer>results) {
         this.results = results;
     }
+
+    public void removeResult() {
+        if(!results.isEmpty()){ // 리스트가 비어있는지 먼저 확인해야 됨
+            results.remove(0); // 0번 인덱스가 가장 먼저 들어옴
+            System.out.println("가장 오래된 기록 삭제 완료");
+        }
+        else {
+            System.out.println("삭제할 기록이 없습니다."); // 리스트가 비어있으면 삭제 X
+        }
+    }
 }
