@@ -3,7 +3,7 @@ package step2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Calculator {
+public class Calculator2 {
 
     private List<Integer> results = new ArrayList<>();
 

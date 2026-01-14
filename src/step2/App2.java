@@ -1,11 +1,12 @@
 package step2;
 
 import java.util.Scanner; //Scanner 불러오기
+import java.util.ArrayList;
 
-public class App {
+public class App2 {
 
     public static void main(String[] args) {
-        Calculator calc = new Calculator(); // Calculator 생성
+        Calculator2 calc = new Calculator2(); // Calculator 생성
         Scanner sc = new Scanner(System.in); // Scanner 객체 생성
 
         // exit 입력 전까지 무한 반복
@@ -35,10 +36,9 @@ public class App {
             System.out.println("결과: " + result);
 
             System.out.println("연산 기록: " + calc.getResults()); // 간접접근으로 기록 가져오기
-
-
-
         }
+
+        calc.setResults(new ArrayList<>());
         System.out.println("프로그램을 종료합니다.");
         sc.close();
 
