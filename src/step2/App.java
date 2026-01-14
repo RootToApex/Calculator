@@ -26,7 +26,7 @@ public class App {
             if (num2 < 0) {
                 System.out.println("양의 정수를 입력하세요");
                 continue;
-            }
+                        }
 
             System.out.print("사칙연산 기호를 입력하세요: ");
             char operator = sc.next().charAt(0);
